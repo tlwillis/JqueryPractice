@@ -1,0 +1,44 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="/static/styles/styles.css" >
+</head>
+
+<body id="body">
+
+	<h1>Posts</h1>
+
+	<form action="/new-post" method="POST" >
+		Author:
+		<input name="author">
+		<br>
+		Title:
+		<input name="title">
+		<br>
+		Post:
+		<input name="body">
+		<br>
+		ID:
+		<input name="id">
+		<br>
+		<input type="submit" value="Submit">
+	</form>
+
+	<a href="/posts">My Posts</a>
+
+	<h1>Posts</h1>
+	<ul id="post-list"></ul>
+
+	<script id="post-template" type="text/post-template">
+		<li>
+		<h3 class="title"></h3>
+		<h4 class="author"></h4>
+		<p class="body"></p>
+		Likes: <span class="likes"></span>
+		<button class="like-button">Like</button>
+		</li>
+	</script>
+	
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script script  src="/static/scripts/script.js""></script>
+
+</body>
